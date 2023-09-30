@@ -15,10 +15,10 @@ public class AreaOfHexagon {
     double side = userInput.nextDouble();
 
     // Calculate using formula
-    double area = (6 * Math.pow(side)) / (4 * Math.tan(PI / 6));
+    double area = (6 * Math.pow(side, 2)) / (4 * Math.tan(Math.PI / 6));
 
     // Display to user
-    System.out.println("The area of the hexagon is " + area);
+    System.out.printf("The area of the hexagon is %.2f", area);
 
     // Close scanner
     userInput.close();
