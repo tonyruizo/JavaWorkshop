@@ -32,9 +32,10 @@ public class DaysInMonth {
 				System.out.println(monthName + " " + userYear + " had " + numOfDays + " days.");
 
 			} else {
-				// Assign findDays method that takes in the month name, into the numOfDays variable
+				// Assign findDays method that takes in the month name, into the numOfDays
+				// variable
 				int numOfDays = findDays(monthName);
-				
+
 				// Display Final output
 				System.out.println(monthName + " " + userYear + " had " + numOfDays + " days.");
 			}
@@ -43,6 +44,7 @@ public class DaysInMonth {
 			System.out.println("Must enter a number between 1 and 12. Try again.");
 		}
 
+		userInput.close();
 	}
 
 	// Method to assign month number to the month name
@@ -50,44 +52,44 @@ public class DaysInMonth {
 		Integer.toString(userMonth);
 		String month = null;
 		switch (userMonth) {
-		case 1:
-			month = "January";
-			break;
-		case 2:
-			month = "February";
-			break;
-		case 3:
-			month = "March";
-			break;
-		case 4:
-			month = "April";
-			break;
-		case 5:
-			month = "May";
-			break;
-		case 6:
-			month = "June";
-			break;
-		case 7:
-			month = "July";
-			break;
-		case 8:
-			month = "August";
-			break;
-		case 9:
-			month = "September";
-			break;
-		case 10:
-			month = "October";
-			break;
-		case 11:
-			month = "November";
-			break;
-		case 12:
-			month = "December";
-			break;
-		default:
-			System.out.println("Imaginary month");
+			case 1:
+				month = "January";
+				break;
+			case 2:
+				month = "February";
+				break;
+			case 3:
+				month = "March";
+				break;
+			case 4:
+				month = "April";
+				break;
+			case 5:
+				month = "May";
+				break;
+			case 6:
+				month = "June";
+				break;
+			case 7:
+				month = "July";
+				break;
+			case 8:
+				month = "August";
+				break;
+			case 9:
+				month = "September";
+				break;
+			case 10:
+				month = "October";
+				break;
+			case 11:
+				month = "November";
+				break;
+			case 12:
+				month = "December";
+				break;
+			default:
+				System.out.println("Imaginary month");
 		}
 		return month;
 	}
@@ -96,41 +98,41 @@ public class DaysInMonth {
 	public static int findDays(String monthName) {
 		int days = 0;
 		switch (monthName) {
-		case "January":
-			days = 31;
-			break;
-		case "February":
-			days = 28;
-			break;
-		case "March":
-			days = 31;
-			break;
-		case "May":
-			days = 31;
-			break;
-		case "June":
-			days = 30;
-			break;
-		case "July":
-			days = 31;
-			break;
-		case "August":
-			days = 31;
-			break;
-		case "September":
-			days = 30;
-			break;
-		case "October":
-			days = 31;
-			break;
-		case "November":
-			days = 30;
-			break;
-		case "December":
-			days = 31;
-			break;
-		default:
-			System.out.println("Unknown month.");
+			case "January":
+				days = 31;
+				break;
+			case "February":
+				days = 28;
+				break;
+			case "March":
+				days = 31;
+				break;
+			case "May":
+				days = 31;
+				break;
+			case "June":
+				days = 30;
+				break;
+			case "July":
+				days = 31;
+				break;
+			case "August":
+				days = 31;
+				break;
+			case "September":
+				days = 30;
+				break;
+			case "October":
+				days = 31;
+				break;
+			case "November":
+				days = 30;
+				break;
+			case "December":
+				days = 31;
+				break;
+			default:
+				System.out.println("Unknown month.");
 		}
 		return days;
 	}
